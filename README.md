@@ -43,9 +43,9 @@ This script will be executed automatically by Packer during the build process.
 # Step 3: Build the AMI
 With the Packer template defined, we can now build the AMI. Open your terminal and navigate to the directory where your tempalte.pkr.hcl file is located. Run the following command:
 
-# ✅ packer.exe validate --var-file=template.pkr.hcl packer-vars.json
-# ✅ packer.exe inspect --var-file=template.pkr.hcl packer-vars.json
-# ✅ packer build --var-file=template.pkr.hcl packer-vars.json
+# ✅ packer.exe validate --var-file packer-vars.json template.pkr.hcl
+# ✅ packer.exe inspect --var-file packer-vars.json template.pkr.hcl
+# ✅ packer.exe build --var-file packer-vars.json template.pkr.hcl
 
 ![packer-validation](https://github.com/user-attachments/assets/fdd4c1ea-cf91-4bc7-8a98-efa6f1ec8167)
 
